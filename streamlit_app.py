@@ -37,10 +37,10 @@ def main():
     with col1:
         st.write('bedrooms vs price')
         fig,ax = plt.subplots()
-        plt.scatter(df['bedrooms'],df['price'])
+        plt.scatter(house['bedrooms'],house['price'])
         st.pyplot(fig)
     with col2:    
-        plotly_fig = px.scatter(df['bedrooms'],df['price'])
+        plotly_fig = px.scatter(house['bedrooms'],house['price'])
         st.plotly_chart(plotly_fig)
 
     click_me_btn = st.button('Click Me')
