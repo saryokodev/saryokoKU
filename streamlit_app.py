@@ -11,7 +11,7 @@ def main():
     st.write('Some Pythagorean Equation : ')
     st.latex('c^2 = a^2+b^2')
     
-    st.dataframe(house)
+    # st.dataframe(house)
     st.write('metrics')
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
     st.write('Menampilkan DataFrame dengan St Agrid')
