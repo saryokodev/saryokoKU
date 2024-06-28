@@ -19,7 +19,7 @@ def main():
 
     st.table([x for x in range(1,5)])
 
- col1, col2, col3 = st.columns(3)
+    col1, col2, col3 = st.columns(3)
     with col1:
         jml_row = len(df)
         st.metric(label="Jumlah kolom", value=f"{jml_row} rows")
