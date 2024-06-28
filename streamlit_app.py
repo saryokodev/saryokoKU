@@ -101,7 +101,8 @@ def profile():
     st.write("Ini adalah halaman Profile.")
     st.write("Di sini Anda dapat menambahkan konten untuk halaman Profile Anda.")
     # Tambahkan konten halaman Profile di sini
-    
-if _name_ == '_main_' : 
+
+
+if __name__ == '__main__' : 
   main()
 
