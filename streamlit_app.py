@@ -8,8 +8,8 @@ def main():
     st.latex('c^2 = a^2+b^2')
     
     house = 'house_clean.csv'
-    st.dataframe(house)
-    # st.writer('metrics')
+    # st.dataframe(house)
+    st.writer('metrics')
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
 if __name__ == '__main__':
