@@ -5,13 +5,15 @@ from st_aggrid import AgGrid
 house = pd.read_csv('house_clean.csv')
 
 def main():
+    st.sidebar.title("Menu")
+    menu = st.sidebar.selectbox("Pilih halaman:", ["Home", "Profile"])
     st.header('Halaman Streamlit Saryoko')
     st.subheader('This is SubHeader')
     st.markdown('# Rendering Markdown')
     st.write('Some Pythagorean Equation : ')
     st.latex('c^2 = a^2+b^2')
     
-    # st.dataframe(house)
+    st.dataframe(house)
     st.write('metrics')
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
     st.write('Menampilkan DataFrame dengan St Agrid')
@@ -22,10 +24,10 @@ def main():
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        jml_row = len(df)
+        jml_row = len(house)
         st.metric(label="Jumlah kolom", value=f"{jml_row} rows")
     with col2:    
-        jml_col = len(df.columns)
+        jml_col = len(house.columns)
         st.metric(label="Jumlah row", value=f"{jml_col} rows")
     with col3:    
         st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
