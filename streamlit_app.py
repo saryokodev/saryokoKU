@@ -9,7 +9,7 @@ def main():
     
     house = 'house_clean.csv'
     st.dataframe(house)
-    st.writer('metrics')
+    # st.writer('metrics')
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
 if __name__ == '__main__':
