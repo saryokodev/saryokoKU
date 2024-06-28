@@ -1,3 +1,5 @@
+import streamlit as st
+
 def main():
     st.write('Minimal Example')
     st.subheader('This is SubHeader')
