@@ -16,6 +16,9 @@ def main():
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
     st.write('Menampilkan DataFrame dengan St Agrid')
     AgGrid(house)
-    
+
+    st.table([x for x in range(1,5)])
+
+
 if __name__ == '__main__':
     main()
