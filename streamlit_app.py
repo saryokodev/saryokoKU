@@ -7,8 +7,8 @@ def main():
     st.write('Some Pythagorean Equation : ')
     st.latex('c^2 = a^2+b^2')
     
-    house = 'house_clean.csv'
-    st.dataframe(house)
+    # house = 'house_clean.csv'
+    # st.dataframe(house)
     st.write('metrics')
     st.metric(label="Temperature", value="70 °F", delta="1.2 °F")
 
