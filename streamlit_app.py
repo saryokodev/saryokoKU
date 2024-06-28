@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from st_aggrid import AgGrid
+import matplotlib.pyplot as plt
 
 house = pd.read_csv('house_clean.csv')
 
